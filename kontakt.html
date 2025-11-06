@@ -219,7 +219,27 @@
         </div>
     </footer>
 
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>🍪 Cookies & Datenschutz</h3>
+                <p>
+                    Wir verwenden Cookies, um Ihnen die bestmögliche Nutzung unserer Webseite zu ermöglichen.
+                    Notwendige Cookies sind für den Betrieb der Seite erforderlich. Mit Ihrer Zustimmung verwenden
+                    wir auch optionale Cookies zur Verbesserung unseres Angebots.
+                    Weitere Informationen finden Sie in unserer <a href="#">Datenschutzerklärung</a>.
+                </p>
+            </div>
+            <div class="cookie-banner-buttons">
+                <button id="acceptAllCookies" class="btn btn-accept-all">Alle akzeptieren</button>
+                <button id="acceptNecessaryCookies" class="btn btn-accept-necessary">Nur notwendige</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="cookie-banner.js"></script>
     <script>
         // Einfache Formular-Validierung
         document.getElementById('contactForm').addEventListener('submit', function(e) {

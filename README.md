@@ -191,6 +191,35 @@ Zusätzliche Empfehlungen:
 3. Füge Google Analytics hinzu
 4. Registriere die Seite in der Google Search Console
 
+## Cookie-Banner
+
+Die Webseite enthält einen DSGVO-konformen Cookie-Banner:
+
+- **Automatische Anzeige**: Wird beim ersten Besuch angezeigt
+- **Speicherung**: Cookie-Einstellungen werden 365 Tage gespeichert
+- **Zwei Optionen**:
+  - "Alle akzeptieren" - Erlaubt alle Cookies (inkl. Analytics)
+  - "Nur notwendige" - Nur technisch notwendige Cookies
+
+### Analytics einbinden
+
+Wenn du Google Analytics oder andere Tracking-Tools verwenden möchtest:
+
+1. Öffne [cookie-banner.js](cookie-banner.js)
+2. Gehe zur Funktion `loadAnalytics()` (Zeile ~53)
+3. Füge deinen Analytics-Code ein, z.B.:
+   ```javascript
+   function loadAnalytics() {
+       // Google Analytics 4
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'G-XXXXXXXXXX'); // Deine Measurement ID
+   }
+   ```
+
+Das Script wird nur geladen, wenn der Nutzer "Alle akzeptieren" wählt.
+
 ## Support & Weiterentwicklung
 
 Für Fragen oder Anpassungen an der Webseite:
