@@ -126,7 +126,7 @@ a {
 }
 
 .logo-img {
-    height: 50px;
+    height: 90px;
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
@@ -676,7 +676,7 @@ section {
     }
 
     .logo-img {
-        height: 40px;
+        height: 70px;
     }
 
     .logo-text::before,
