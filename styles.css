@@ -1324,3 +1324,104 @@ section {
         width: 100%;
     }
 }
+
+/* ===================================
+   Legal Pages (Impressum, Datenschutz)
+   =================================== */
+
+.legal-content {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl) 0;
+}
+
+.legal-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.legal-wrapper h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 2px solid var(--color-gray-200);
+}
+
+.legal-wrapper h2:first-child {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 0;
+}
+
+.legal-wrapper h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.legal-wrapper h4 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.legal-wrapper p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.legal-wrapper ul,
+.legal-wrapper ol {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+}
+
+.legal-wrapper li {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+.legal-wrapper a {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.legal-wrapper a:hover {
+    color: var(--color-primary);
+}
+
+.legal-wrapper strong {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.legal-footer {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-gray-300);
+    text-align: center;
+}
+
+.legal-footer p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+    .legal-wrapper {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .legal-wrapper h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .legal-wrapper h3 {
+        font-size: var(--font-size-lg);
+    }
+}

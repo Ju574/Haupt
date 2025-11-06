@@ -1,0 +1,14 @@
+# robots.txt for KFZ-Sachverständigenbüro Reichel
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://[DEINE-DOMAIN].github.io/sitemap.xml
+
+# Disallow admin/private directories (falls vorhanden)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay (optional, nur bei Bedarf)
+# Crawl-delay: 10

@@ -183,13 +183,28 @@ Die Seite ist bereits SEO-freundlich mit:
 - ✅ Alt-Tags für Bilder
 - ✅ Responsive Design
 - ✅ Schnelle Ladezeiten
+- ✅ **sitemap.xml** - Für bessere Indexierung durch Google
+- ✅ **robots.txt** - Suchmaschinen-Anweisungen
 
-Zusätzliche Empfehlungen:
+### Nächste Schritte für SEO:
 
-1. Erstelle eine `sitemap.xml`
-2. Erstelle eine `robots.txt`
-3. Füge Google Analytics hinzu
-4. Registriere die Seite in der Google Search Console
+1. **Sitemap bei Google einreichen:**
+   - Gehe zu [Google Search Console](https://search.google.com/search-console)
+   - Füge deine Website hinzu
+   - Reiche die Sitemap ein: `https://[DEINE-DOMAIN].github.io/sitemap.xml`
+
+2. **Google My Business erstellen:**
+   - Gehe zu [Google Business Profile](https://www.google.com/business/)
+   - Erstelle ein Profil mit deiner Adresse
+   - Das ist SEHR wichtig für lokale Suchen wie "KFZ Gutachter [Stadt]"
+
+3. **sitemap.xml anpassen:**
+   - Öffne [sitemap.xml](sitemap.xml)
+   - Ersetze `[DEINE-DOMAIN]` mit deiner tatsächlichen Domain
+
+4. **robots.txt anpassen:**
+   - Öffne [robots.txt](robots.txt)
+   - Ersetze `[DEINE-DOMAIN]` mit deiner tatsächlichen Domain
 
 ## Cookie-Banner
 
