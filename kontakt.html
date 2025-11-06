@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktieren Sie KFZ-Sachverständigenbüro Reichel für professionelle Fahrzeugbegutachtung und Gutachten.">
+    <title>Kontakt | KFZ-Sachverständigenbüro Reichel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="assets/logo-placeholder.svg" alt="KFZ-Sachverständigenbüro Reichel Logo" class="logo-img">
+                    <span class="logo-text">Sachverständigenbüro Reichel</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="ueber-uns.html">Über uns</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontakt</h1>
+            <p>Wir sind für Sie da - kontaktieren Sie uns für eine unverbindliche Beratung</p>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Kontaktinformationen -->
+                <div class="contact-info">
+                    <h2>Kontaktinformationen</h2>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>[Straße & Hausnummer]<br>
+                            [PLZ & Stadt]</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Telefon</h3>
+                            <p><a href="tel:[TELEFONNUMMER]">[TELEFONNUMMER]</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Mobil</h3>
+                            <p><a href="tel:[MOBILNUMMER]">[MOBILNUMMER]</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>E-Mail</h3>
+                            <p><a href="mailto:[E-MAIL]">[E-MAIL]</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h3>Öffnungszeiten</h3>
+                            <p>
+                                Mo - Fr: [09:00 - 18:00 Uhr]<br>
+                                Sa: [Nach Vereinbarung]<br>
+                                So: [Geschlossen]
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🚗</div>
+                        <div class="contact-details">
+                            <h3>Vor-Ort-Service</h3>
+                            <p>Wir kommen zu Ihnen! Terminvereinbarung nach telefonischer Absprache.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kontaktformular -->
+                <div class="contact-form-wrapper">
+                    <h2>Kontaktformular</h2>
+                    <p class="mb-3">Senden Sie uns eine Nachricht und wir melden uns zeitnah bei Ihnen zurück.</p>
+
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Anliegen</label>
+                            <select id="service" name="service">
+                                <option value="">Bitte wählen...</option>
+                                <option value="unfallgutachten">Unfallgutachten</option>
+                                <option value="wertgutachten">Wertgutachten</option>
+                                <option value="oldtimer">Oldtimer-Bewertung</option>
+                                <option value="haftpflicht">Haftpflichtgutachten</option>
+                                <option value="beweissicherung">Beweissicherung</option>
+                                <option value="technisch">Technische Begutachtung</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nachricht *</label>
+                            <textarea id="message" name="message" required placeholder="Bitte beschreiben Sie Ihr Anliegen..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">Ich habe die Datenschutzerklärung gelesen und akzeptiere diese. *</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Platzhalter) -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">So finden Sie uns</h2>
+            <div class="map-placeholder">
+                <p>🗺️ Kartenansicht</p>
+                <p class="text-muted">Hier können Sie später eine Google Maps Einbettung einfügen</p>
+                <p class="text-muted">Adresse: [Straße & Hausnummer], [PLZ & Stadt]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>KFZ-Sachverständigenbüro Reichel</h4>
+                    <p>Ihr zuverlässiger Partner für professionelle Kfz-Gutachten und Fahrzeugbewertungen.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>📍 [Straße & Hausnummer]</li>
+                        <li>[PLZ & Stadt]</li>
+                        <li>📞 <a href="tel:[TELEFONNUMMER]">[TELEFONNUMMER]</a></li>
+                        <li>✉️ <a href="mailto:[E-MAIL]">[E-MAIL]</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Öffnungszeiten</h4>
+                    <ul>
+                        <li>Mo - Fr: [09:00 - 18:00 Uhr]</li>
+                        <li>Sa: [Nach Vereinbarung]</li>
+                        <li>So: [Geschlossen]</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 KFZ-Sachverständigenbüro Reichel. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Einfache Formular-Validierung
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Hier würde normalerweise die Formular-Verarbeitung stattfinden
+            // Zum Beispiel mit einem Backend-Service oder Formspree, etc.
+
+            alert('Vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.\n\nHinweis: Dies ist eine Demo. In der finalen Version wird das Formular tatsächlich versendet.');
+
+            // Formular zurücksetzen
+            this.reset();
+        });
+    </script>
+</body>
+</html>
