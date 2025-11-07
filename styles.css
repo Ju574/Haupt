@@ -1134,21 +1134,15 @@ section {
     padding: var(--spacing-xl) 0;
 }
 
-.map-placeholder {
-    background-color: var(--color-gray-300);
-    padding: var(--spacing-xl);
+.map-container {
     border-radius: var(--radius-lg);
-    text-align: center;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
 }
 
-.map-placeholder p:first-child {
-    font-size: 3rem;
-    margin-bottom: var(--spacing-sm);
+.map-container iframe {
+    display: block;
+    width: 100%;
 }
 
 .text-muted {
