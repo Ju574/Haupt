@@ -123,6 +123,12 @@ a {
     color: var(--color-primary);
     flex-shrink: 0;
     max-width: 70%;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .logo-img {
@@ -191,6 +197,7 @@ a {
     overflow: hidden;
 }
 
+/* Hero Background Image */
 .hero::before {
     content: '';
     position: absolute;
@@ -198,14 +205,11 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image:
-        linear-gradient(30deg, rgba(26, 26, 26, 0.9) 12%, transparent 12.5%, transparent 87%, rgba(26, 26, 26, 0.9) 87.5%, rgba(26, 26, 26, 0.9)),
-        linear-gradient(150deg, rgba(26, 26, 26, 0.9) 12%, transparent 12.5%, transparent 87%, rgba(26, 26, 26, 0.9) 87.5%, rgba(26, 26, 26, 0.9)),
-        linear-gradient(30deg, rgba(26, 26, 26, 0.9) 12%, transparent 12.5%, transparent 87%, rgba(26, 26, 26, 0.9) 87.5%, rgba(26, 26, 26, 0.9)),
-        linear-gradient(150deg, rgba(26, 26, 26, 0.9) 12%, transparent 12.5%, transparent 87%, rgba(26, 26, 26, 0.9) 87.5%, rgba(26, 26, 26, 0.9));
-    background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px;
-    opacity: 0.1;
+    background-image: url('../assets/gebaeude-aussen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 
 .hero-overlay {
@@ -214,7 +218,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, rgba(26, 26, 26, 0.95), rgba(45, 45, 45, 0.85));
+    background: linear-gradient(to right, rgba(26, 26, 26, 0.92) 0%, rgba(26, 26, 26, 0.75) 50%, rgba(26, 26, 26, 0.4) 100%);
 }
 
 .hero-content {
@@ -224,17 +228,21 @@ a {
 }
 
 .hero-title {
+    font-family: 'Raleway', sans-serif;
     font-size: var(--font-size-4xl);
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: var(--spacing-sm);
     line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
+    font-family: 'Raleway', sans-serif;
     font-size: var(--font-size-xl);
     margin-bottom: var(--spacing-lg);
     color: var(--color-gray-200);
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 .hero-buttons {
@@ -250,6 +258,7 @@ a {
 .btn {
     display: inline-block;
     padding: 0.875rem 2rem;
+    font-family: 'Raleway', sans-serif;
     font-size: var(--font-size-base);
     font-weight: 600;
     text-align: center;
@@ -258,6 +267,7 @@ a {
     transition: var(--transition-base);
     border: 2px solid transparent;
     text-decoration: none;
+    letter-spacing: 0.02em;
 }
 
 .btn-primary {
@@ -273,14 +283,19 @@ a {
 }
 
 .btn-secondary {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.15);
     color: var(--color-white);
     border: 2px solid var(--color-white);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
 }
 
 .btn-secondary:hover {
     background-color: var(--color-white);
     color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .btn-light {
@@ -1392,6 +1407,147 @@ section {
 .legal-wrapper strong {
     color: var(--color-text);
     font-weight: 600;
+}
+
+/* ===================================
+   Building & Facilities Sections
+   =================================== */
+
+.building-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-bg);
+}
+
+.building-image {
+    margin-top: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.building-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.facilities-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-white);
+}
+
+/* Facilities Gallery Grid */
+.facilities-gallery {
+    margin-top: var(--spacing-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.facility-item {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.facility-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.facility-caption {
+    padding: var(--spacing-md);
+    background: var(--color-white);
+}
+
+.facility-caption h4 {
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.facility-caption p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+/* Facilities Description */
+.facilities-description {
+    margin-top: var(--spacing-xl);
+    text-align: center;
+}
+
+.facilities-description h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.facilities-description > p {
+    color: var(--color-text-light);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+/* Features Grid */
+.facilities-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    text-align: left;
+}
+
+.feature-item {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.feature-item strong {
+    display: block;
+    color: var(--color-text);
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-item p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .facilities-gallery {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .facility-item img {
+        height: 300px;
+    }
+
+    .facilities-features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
 }
 
 .legal-footer {
