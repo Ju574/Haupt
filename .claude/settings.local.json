@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o \"inter.css\" \"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap\" --header \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\")",
+      "Bash(curl -s -o \"raleway.css\" \"https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap\" --header \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\")",
+      "Bash(curl -s -o \"raleway-400.ttf\" \"https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf\")",
+      "Bash(curl -s -o \"raleway-500.ttf\" \"https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf\")",
+      "Bash(curl -s -o \"raleway-600.ttf\" \"https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCP.ttf\")",
+      "Bash(curl -s -o \"raleway-700.ttf\" \"https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf\")",
+      "Bash(curl -s -o \"raleway-800.ttf\" \"https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf\")",
+      "Bash(ls -la *.ttf)"
+    ]
+  }
+}
