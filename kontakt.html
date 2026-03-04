@@ -6,9 +6,7 @@
     <meta name="description" content="Kontaktieren Sie KFZ-Sachverständigenbüro Reichel für professionelle Fahrzeugbegutachtung und Gutachten.">
     <title>Kontakt | KFZ-Sachverständigenbüro Reichel</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -68,18 +66,10 @@
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div class="contact-details">
-                            <h3>Mobil</h3>
-                            <p><a href="tel:+4917672683836">+49 176 72683836</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
                         <div class="contact-icon">✉️</div>
                         <div class="contact-details">
                             <h3>E-Mail</h3>
-                            <p><a href="mailto:[E-MAIL]">[E-MAIL]</a></p>
+                            <p><a href="mailto:kfz-gutachten.reichel@outlook.de">kfz-gutachten.reichel@outlook.de</a></p>
                         </div>
                     </div>
 
@@ -88,9 +78,9 @@
                         <div class="contact-details">
                             <h3>Öffnungszeiten</h3>
                             <p>
-                                Mo - Fr: [09:00 - 18:00 Uhr]<br>
-                                Sa: [Nach Vereinbarung]<br>
-                                So: [Geschlossen]
+                                Mo - Fr: 08:00 - 17:30 Uhr<br>
+                                Sa: 08:00 - 15:00 Uhr<br>
+                                So: Geschlossen
                             </p>
                         </div>
                     </div>
@@ -180,15 +170,25 @@
         <div class="container">
             <h2 class="section-title">So finden Sie uns</h2>
             <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.328!2d10.096073715674!3d48.41604617924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47995d67622e1b3b%3A0xf2ea9a902996ee1c!2sAn%20d.%20Leibi%2014%2C%2089278%20Nersingen!5e0!3m2!1sde!2sde!4v1699999999999!5m2!1sde!2sde"
-                    width="100%"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div id="map-placeholder" class="map-placeholder">
+                    <div class="map-placeholder-content">
+                        <p>Diese Karte wird von Google Maps bereitgestellt. Durch das Laden der Karte werden Daten an Google übertragen.</p>
+                        <p><small>Weitere Informationen in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</small></p>
+                        <button id="load-map-btn" class="btn btn-primary">Karte laden</button>
+                    </div>
+                </div>
+                <div id="map-frame" style="display:none;">
+                    <iframe
+                        data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.328!2d10.096073715674!3d48.41604617924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47995d67622e1b3b%3A0xf2ea9a902996ee1c!2sAn%20d.%20Leibi%2014%2C%2089278%20Nersingen!5e0!3m2!1sde!2sde!4v1699999999999!5m2!1sde!2sde"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        id="google-map-iframe">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -208,16 +208,16 @@
                         <li>📍 An der Leibi 14</li>
                         <li>89278 Nersingen</li>
                         <li>📞 <a href="tel:+4917672683836">+49 176 72683836</a></li>
-                        <li>✉️ <a href="mailto:[E-MAIL]">[E-MAIL]</a></li>
+                        <li>✉️ <a href="mailto:kfz-gutachten.reichel@outlook.de">kfz-gutachten.reichel@outlook.de</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Öffnungszeiten</h4>
                     <ul>
-                        <li>Mo - Fr: [09:00 - 18:00 Uhr]</li>
-                        <li>Sa: [Nach Vereinbarung]</li>
-                        <li>So: [Geschlossen]</li>
+                        <li>Mo - Fr: 08:00 - 17:30 Uhr</li>
+                        <li>Sa: 08:00 - 15:00 Uhr</li>
+                        <li>So: Geschlossen</li>
                     </ul>
                 </div>
 
@@ -233,7 +233,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 KFZ-Sachverständigenbüro Reichel. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2026 KFZ-Sachverständigenbüro Reichel. Alle Rechte vorbehalten.</p>
                 <div class="footer-links">
                     <a href="impressum.html">Impressum</a>
                     <a href="datenschutz.html">Datenschutz</a>
@@ -264,11 +264,11 @@
     <script src="script.js"></script>
     <script src="cookie-banner.js"></script>
     <script>
-        // Formular wird automatisch von Formspree verarbeitet
-        // Erfolgs-/Fehlermeldungen werden nach dem Submit angezeigt
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            // Formspree übernimmt die Verarbeitung
-            // Nach erfolgreichem Submit wird auf Formspree-Bestätigungsseite weitergeleitet
+        document.getElementById('load-map-btn').addEventListener('click', function() {
+            var iframe = document.getElementById('google-map-iframe');
+            iframe.src = iframe.getAttribute('data-src');
+            document.getElementById('map-placeholder').style.display = 'none';
+            document.getElementById('map-frame').style.display = 'block';
         });
     </script>
 </body>
